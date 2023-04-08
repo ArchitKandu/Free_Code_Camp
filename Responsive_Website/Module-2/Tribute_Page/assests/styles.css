@@ -1,0 +1,87 @@
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #AFB3E7;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+main{
+    background-color: #7278D5;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+#title{
+    text-align: center;
+    font-family: 'Finger Paint', cursive;
+    margin: 20px auto;
+    padding-top: 5px;
+}
+#title h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+#title h3{
+    font-size: 3.25rem;
+    margin: 0;
+}
+@media (max-width: 460px) {
+    #title h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+    #title h3{
+        font-size: 1.4rem;
+    }
+}
+figure{
+    background-color: #AFB3E7;
+    text-align: center;
+    border-radius: 5px;
+    min-width: 150px;
+    margin: auto 10px;
+}
+figure div{
+    display: block;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+figcaption{
+    display: block;
+    font-size: 20px;
+    padding-top: 10px;
+}
+#tribute-info{
+    max-width: 700px;
+    margin: auto;
+}
+#tribute-info p{
+    font-weight: 1000;
+    text-align: center;
+    margin: 60px auto;
+    font-size: 20px;
+}
+#des-points, #more{
+    font-weight: 800;
+}
+#more{
+    text-align: center;
+    padding: 20px 0;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+a:hover{
+    color: blue;
+}

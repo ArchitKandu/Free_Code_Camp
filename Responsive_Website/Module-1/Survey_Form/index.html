@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><em>(Please fill up this form and help us improve)</em></p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="entry">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder=" Enter your name" required>
+            </div>
+            <div class="entry">
+                <label for="email"id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder=" Enter your Email" required>
+            </div>
+
+            <div class="entry">
+                <label for="age" id="number-label">Age
+                <span class="optional"> <em>(optional)</em></span></label>
+                <input type="number" name="number" id="number" min="10" max="99" placeholder=" Age">
+            </div>
+
+            <div class="entry">
+                <label for="dropdown">When will you be Graduating?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="">-Select Graduating Year-</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+            </div>
+
+            <div class="entry">
+                <p>Please provide ratings as per your experience</p>
+                <label for="satisfactory"><input type="radio" name="ratings" id="satisfactory"  value="satisfactory" class="inline" checked /> Satisfactory</label>
+                <label for="lacking"><input type="radio" name="ratings" id="lacking" value="lacking" class="inline"/> Lacking</label>
+                <label for="not-satisfactory"><input type="radio" name="ratings" id="not-satisfactory" value="not-satisfactory" class="inline"/> Not Satisfactory</label>
+            </div>
+
+            <div class="entry">
+                <p>What do you feel needs to be added?<span class="optional"> <em>(Check all that apply)</em></span></p>
+                <label for="frontend"></label><input type="checkbox" id="frontend" name="improve" value="frontend" class="inline"> Frontend Development</label>
+                <label for="backend"></label><input type="checkbox" id="backend" name="improve" value="backend" class="inline"> Backend Development</label>
+                <label for="fullstack"></label><input type="checkbox" id="fullstack" name="improve" value="fullstack" class="inline"> Full-Stack Development</label>
+                <label for="web-dev"></label><input type="checkbox" id="web-dev" name="improve" value="web-dev" class="inline"> Web Development</label>
+                <label for="cloud"></label><input type="checkbox" id="cloud" name="improve" value="cloud" class="inline"> Cloud Development</label>                
+                <label for="others"></label><input type="checkbox" id="others" name="improve" value="others"  class="inline"> Others</label>                
+            </div>
+
+            <div class="entry">
+                <p>Any Comments here:</p>
+                <textarea name="comments" id="comments" placeholder=" Enter Comments Here..." rows="5"></textarea>
+            </div>
+
+            <div class="entry">
+                <button type="submit" id="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
