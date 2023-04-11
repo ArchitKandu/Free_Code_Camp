@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (min-width:750px) {
+    *{
+        font-size: 20px;
+    }
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: ghostwhite;
+    margin: 0 auto 10px auto;
+    width: calc(100% - 10px);
+}
+header{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+#navbar{
+    background-color: rgb(220, 220, 220);
+}
+#navbar > header{
+    padding-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+#navbar > div{
+    display: flex;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid black;
+    justify-content: space-evenly;
+}
+ul{
+    padding-left: 50px;
+}
+.info{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 415px) {
+    #navbar > div{
+        display: block;
+    }
+}
+@media screen and (min-width: 750px) {
+    .page{
+        display: flex;
+    }
+    .navigation{
+        width: 25%;
+        background-color: rgb(220, 220, 220);
+    }
+    #navbar > div{
+        display: block;
+        border: none;
+    }
+    .info{
+        width: 70%;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .nav-link{
+        display: block;
+        width: 100%;
+        padding: 50px auto;
+        border-collapse: collapse;
+        border: 2px solid black;
+    }
+}
+a:hover{
+    text-decoration: none;
+}
+code{
+    font-family: 'Source Code Pro', monospace;
+    background-color:rgb(220, 220, 220);
+}
