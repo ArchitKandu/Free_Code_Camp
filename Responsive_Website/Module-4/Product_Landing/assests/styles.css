@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    background-color: ghostwhite;
+    color: #001d2f;
+}
+#header{
+    display: flex;
+    padding: 5px;
+    height: 5rem;
+}
+#header-img{
+    width: 30%;
+}
+#nav-bar{
+    display: inline-flex;
+    width: 70%;
+    font-size: 1rem;
+    text-align: right;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-link{
+    color: #001d2f;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.home-page{
+    height: 90vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.home-text{
+    width: 50%;
+    align-items: center;
+}
+.home-text h1{
+    font-size: 5rem;
+}
+.home-text p{
+    padding-top: 3rem;
+    font-size: 3rem;
+}
+.home-page img{
+    width: 50%;
+}
+form{
+    margin-top: 2rem;
+}
+input{
+    font-size: 1.2rem;
+}
+input[type="email"]{
+    width: 50%;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #001d2f;
+}
+input[type="submit"],button{
+    height: 2rem;
+    width: 25%;
+    background-color: rgb(70, 165, 1);
+    border: none;
+    color: ghostwhite;
+    border-radius: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+}
+.feature-text{
+    width: 50%;
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+.feature-image{
+    width: 50%;
+}
+.feature-image img{
+    width: 70%;
+}
+button{
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    margin: 1rem auto;
+}
+iframe{
+    display: flex;
+    margin: 1rem auto;
+}
+#pricing{
+    margin: 5rem auto;
+}
+.plans{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 2rem;
+}
+.plan-1, .plan-3{
+    width: 25%;
+    font-size: 1rem;
+}
+.plan-2{
+    width: 50%;
+    font-size: 1.5rem;
+}
+.plan-1, .plan-2, .plan-3{
+    border: 1px solid rgb(70, 165, 1);
+    border-radius: 1.5rem;
+    margin: auto 2rem;
+}
+.plan-2 .price{
+    font-size: 2.5rem;
+}
+.plan-1 .price, .plan-3 .price{
+    font-size: 1.5rem;
+}
+.most-popular{
+    color: rgb(70, 165, 1);
+}
+footer{
+    background-color: #001d2f;
+    color: ghostwhite;
+    height: 3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+footer p{
+    padding: 0.75rem;
+}
+footer a{
+    color: ghostwhite;
+}
+button:hover,input[type="submit"]:hover{
+    background-color: ghostwhite;
+    color: rgb(70, 165, 1);
+    border: 1px solid rgb(70, 165, 1);
+    cursor: pointer;
+}
