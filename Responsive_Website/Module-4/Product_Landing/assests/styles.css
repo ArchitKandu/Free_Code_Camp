@@ -41,7 +41,6 @@ main{
     padding: 20px;
 }
 .home-page{
-    height: 90vh;
     display: flex;
     margin: auto;
     align-items: center;
@@ -162,4 +161,9 @@ button:hover,input[type="submit"]:hover{
     color: rgb(70, 165, 1);
     border: 1px solid rgb(70, 165, 1);
     cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+    #header, .home-page, .feature, .plans, #nav-bar{
+        display: block;
+    }
 }
