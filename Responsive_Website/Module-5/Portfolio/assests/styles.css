@@ -1,0 +1,155 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}  
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-white);
+    font-size: 10px;
+    width: 100%;
+}
+#navbar{
+    overflow: hidden;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    background-color: var(--main-red);
+    height: 5rem;
+    top: 0;
+    color: var(--main-white);
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 1.5rem;
+}
+a:hover{
+    transform: scale(1.2);
+}
+#navbar a{
+    float: left;
+    display: block;
+    padding: 1.5rem;
+}
+#navbar a:hover{
+    background-color: var(--main-gray);
+}
+#welcome-section, #contacts, #projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#welcome-section{
+    background: linear-gradient(60deg,var(--main-gray),black);
+    height: 100vh;
+}
+#welcome-section *{
+    margin: 1rem auto;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.1rem;
+}
+h3{
+    font-size: 1.5rem;
+    color: #be3144;
+    font-weight: 200;
+}
+#projects{
+    background-color: #45567d;
+    text-align: center;
+}
+#projects div div div a{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #303841;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+#contacts,footer{
+    background-color: var(--main-gray);
+}
+#contacts{
+    height: 80vh;
+}
+#contacts div{
+    display: block;
+}
+#contacts div div a, #projects div div a{
+    margin: 2rem;
+}
+@media screen and (min-width: 750px){
+    #contacts div div,#projects div div{
+        display: flex;
+    }
+}
+@media screen and (max-width: 749px) {
+    #contacts div div a, #projects div div a{
+        margin-top: 2rem;
+    }
+}
+i{
+    margin-right: 0.5rem;
+}
+footer{
+    padding: 2rem;
+    border-top: 5px solid var(--main-red);
+    font-size: 1.1rem;
+    text-align: center;
+}
+@media screen and (min-width: 291px) and (max-width: 610px) {
+    a{
+        font-size: 1.125rem;
+    }
+    #navbar a{
+        padding: 1.5rem 0.5rem;
+    }
+    h1{
+        font-size: 2.25rem;
+    }
+    h2{
+        font-size: 1.575rem;
+    }
+    h3{
+        font-size: 1.125rem;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+}  
+@media screen and (max-width: 290px) {
+    a{
+        font-size: 0.75rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.05rem;
+    }
+    h3{
+        font-size: 0.75rem;
+    }
+    footer{
+        font-size: 1rem;
+    }
+}
